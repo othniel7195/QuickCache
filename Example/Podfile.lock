@@ -1,0 +1,27 @@
+PODS:
+  - MMKV (1.2.10):
+    - MMKVCore (~> 1.2.10)
+  - MMKVCore (1.2.10)
+  - QuickKV (0.1.0):
+    - MMKV
+
+DEPENDENCIES:
+  - QuickKV (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MMKV
+    - MMKVCore
+
+EXTERNAL SOURCES:
+  QuickKV:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MMKV: 76033b9ace2006623308910a3afcc0e25eba3140
+  MMKVCore: b00e7a09ec77a1b916aef336eedd3b99ec249978
+  QuickKV: b145d948f7b71704c99c1c7c37196cb9e03969c6
+
+PODFILE CHECKSUM: 249ff045abda57c6c80afd791ab2a274931d9a89
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,1441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0216F4A5F5D29795C7224347F304EE62 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CA5D20FA88869AE0D87242BA7966DC /* CoreFoundation.framework */; };
+		02290B13BA9FDA099999C88DF52848C1 /* MMKV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF9A5E2A8EE47C843A24D9108D798B /* MMKV.framework */; };
+		06F7C82D4E2D9FB68A71500AD6EDF25B /* MMKV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF855BC972EC852EC6A9F2F76B9094F /* MMKV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F811CF789B76338EF964818D0186D15 /* CacheError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E5BA279AC050B61370EEDFE9B876F /* CacheError.swift */; };
+		1317998C257192CE0BED883C3BFF5099 /* MMKVPredef.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A7A163D2945F093BCB5D468E10F6F2 /* MMKVPredef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		150A51884FE1D958716E451DC89BEA42 /* MMKV_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EA7A860D2F8410D4BB4BCE753B5F77 /* MMKV_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		1A763F6F2E710F6D4FED8954F2F2A225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */; };
+		1B5F8FBD2D4803B2A56DAE58F27E501B /* ScopedLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2B2CEC1A8E7164F68D45757ACC725E6A /* ScopedLock.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0A039FC4507CE08B0BF36DCE3C62AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */; };
+		1E9F38E78EC15B34F90FE460BC33ACC9 /* CodedOutputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07129BE46C21D8DE2C8669F96B99DC60 /* CodedOutputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		215AD37B7EF0CE69E3E63EF73B5FAA40 /* Pods-QuickKV_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A34936E7A548A2970E06FF62F3CB8C47 /* Pods-QuickKV_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25994B951A3A5D149251054DE7F32D6B /* openssl_md5.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD4E84349A7074B08BA2AC3E30195B0 /* openssl_md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		260940AE697FFAEF8C72EB4D8D8B2537 /* PBEncodeItem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 93F3416264BEABCC40BE9B9A06B701F4 /* PBEncodeItem.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		271214ABAA4662EB9FCEDE076FD936C1 /* MMKVCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB68B1AD7C705B21C712542406658B60 /* MMKVCore.framework */; };
+		279B7D5EB79521A0D4F0F07FBE8AEF6F /* CodedInputDataCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E71FAE266594C986D93CBE8A202228F /* CodedInputDataCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28D5ABBE57A8224DA7B1E68894E50B06 /* InterProcessLock_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF4A738E99D6BB49A799B00E9CE18F01 /* InterProcessLock_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		2B0E23B10761AE6DA33F9FD7E21AE319 /* MemoryFile_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C229C8D0F5C5C2C495F4104D38896A32 /* MemoryFile_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		2D2ECBA44AC51DA22C34451ACC150931 /* QuickKV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FB04FBA560A5BF131095ED6A59F899 /* QuickKV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38D4FFAC11A634A9045D270117B2CC72 /* MiniPBCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A08702E4C2EB10884FB1537FC2485C8 /* MiniPBCoder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		3B0FBBE696443836B0DA1077FA0DDDEA /* Pods-QuickKV_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C2F930EC9AB5A933DAF1240A861D0 /* Pods-QuickKV_Tests-dummy.m */; };
+		3C157C1EE693D730A43938F1BDC9F360 /* openssl_md32_common.h in Headers */ = {isa = PBXBuildFile; fileRef = AC69225305041CE8E0C798D783553FB4 /* openssl_md32_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3CFCE06BEA55C8FE94E6C0E04A373E15 /* MMKVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A4108E735361C773A29BF6335992C955 /* MMKVLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47294FC9032A62AF4A0DBFAAE6857DA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B5DB94FDB1103F2319AE1DC4D8D9D /* UIKit.framework */; };
+		4955FD9AC736AE4B03D4ECC0CBD5FFAE /* AESCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A380CA16173727A468DF2536D7ADD06 /* AESCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		4FE441E40437875F78CC77FCB2C55E3B /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A36ECA6E9119B9E8F421C3D0BDBF29C /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A7AD9ACB71B626D1A089CC7925EC7D /* CodedInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EEC7E89C9EAD1436D33BE86DA4F034 /* CodedInputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		561A546016E2A5F2EA3AEE5DDDF43DF4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CA5D20FA88869AE0D87242BA7966DC /* CoreFoundation.framework */; };
+		58C8C489930FB92613AF3E72F079DA25 /* QuickKV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1E89015788D5037CCAC99626F2036 /* QuickKV-dummy.m */; };
+		5D73A3809F85EB452BEAAA8B429C3F25 /* MemoryFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46BE8A7C2A0A9563C9451B113744D5CA /* MemoryFile.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		5E7585C5327DDD5FABE5AA5BE98C808C /* openssl_arm_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AAA2632C16AFBA5CF71D1DE1A337E56 /* openssl_arm_arch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6168A65B824901A3C55EC502F743BA6E /* MMKVLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3B1AA1D9DDFA17C42C3C5F9E6154F6C /* MMKVLog.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		69AF8E4AD417F45432E76805EBD380BE /* MMKV_IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B50614BABE36F5C4FB776489B650129 /* MMKV_IO.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		6E9FF4054FD6BD82A197FED63C5B3541 /* MemoryFile.h in Headers */ = {isa = PBXBuildFile; fileRef = AD75785305A347A7459EDC677CE8BA4C /* MemoryFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		710459E79483525263EB151007ABC3DC /* CacheExpiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6192A2DBDEE754810451346A9DE08 /* CacheExpiry.swift */; };
+		71407F861D084C40861CD08FDE5004FD /* MMKVCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C243746E5B4B6BDCA1239E49C67EE611 /* MMKVCore-dummy.m */; };
+		7150BF2A8DA67791496F43A2232F04DF /* MMKV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3936A0FF18B9A61335FE7504E5DFD7 /* MMKV-dummy.m */; };
+		732E6DCB322D522FFFCB72FF02528E73 /* MemoryFile_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAF07893E00BB0428EA67B0A065DCE /* MemoryFile_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		73C4525FEF4A9E662A3E16567A7D6EB5 /* Pods-QuickKV_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F286704EFC68C2ED52C384E8B14499E3 /* Pods-QuickKV_Example-dummy.m */; };
+		77207079DA0330C02ECBE7BDA93BB4C9 /* CodedInputData_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C65A8009AB024DB0DC050E5470E6083 /* CodedInputData_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		7999702604FC882E11960E81D8F121F1 /* CodedInputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C2015E31755DA9455AA7019A307D5 /* CodedInputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		7C738D760F5978072290B9D20A53C910 /* openssl_md5_dgst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EB597CDF1606155FB84E6409A6ECCD3 /* openssl_md5_dgst.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		806A8174C4CF69903E92F7FCDCBBEC8F /* MMKV_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D7FEDCA1997CE93CA057E7C415F1F0 /* MMKV_OSX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8108A2406BF7986D8C3739FC92A3901B /* openssl_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C91EFFE12BD82616231AAA254EDB25 /* openssl_aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8762C747016E44BFA29FC0C611152BCB /* MiniPBCoder_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97C0E5C435FC81633205040395EA459 /* MiniPBCoder_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		902172BF365CB8A83CCF27F0D42CB458 /* openssl_aes_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBEEAB3AA358A60852BE6F6D616AADD /* openssl_aes_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90DC16EEE5DAC9D24044966BF654A8A9 /* Checksum.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AB1634560B4671C1686E32E988CBC7 /* Checksum.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9356AA435A963AE6727CA43D10FD4725 /* openssl_opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FB7C9B774ED2F256AB197EDA58519A /* openssl_opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9615D7C10A3269B3CF007701C487A096 /* ThreadLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12994B1375F66AF74A2C4F586C64D9E5 /* ThreadLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		993CBDA1BE7351A49260CC3ADF864838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */; };
+		9E3B92F2D578FACEEB001812F5DC12F3 /* ThreadLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FA1965C647A598853E0BDFB189C742 /* ThreadLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		A2E5257078C77B51AAB6933B7C615F06 /* CodedInputDataCrypt_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A681201044B709B8A59E408298ED1 /* CodedInputDataCrypt_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		A3755124D2F9E4FEDD1EF783C9860686 /* openssl_md5_one.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E16DA9AF02B58931B70BF64BE9D3EA1 /* openssl_md5_one.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		AC8FC0EA06A7C01090D1C8639F2CEAF8 /* AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = B63A7068213BC645D1A089EE567BA03A /* AESCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD7E832BCB7CC1273579ACB4C891E6A1 /* libMMKV.mm in Sources */ = {isa = PBXBuildFile; fileRef = E835DC623483D2067EBB0E430FC6CE22 /* libMMKV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE2941C94B3F900CA994B197E77F3E6B /* MMKV_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F034A30E273422F593ECBF97DED5B2A7 /* MMKV_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		B4597A63477282F1B63D5AB914BDFDC6 /* MMKV_IO.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9940B204D7776F2A52560CFD3F5826 /* MMKV_IO.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B725BE73D55BCCD280AE05DF88100B7E /* openssl_md5_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = C1084DFEC30B286E637AA02332B9B87A /* openssl_md5_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B99831E826DA93B5008F62FA /* CacheEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99831E726DA93B5008F62FA /* CacheEntry.swift */; };
+		B99831EA26DA95FD008F62FA /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99831E926DA95FD008F62FA /* Transformer.swift */; };
+		B99831EC26DA9FC4008F62FA /* MMKVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99831EB26DA9FC4008F62FA /* MMKVHelper.swift */; };
+		B99831EE26DAA33B008F62FA /* QuickCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99831ED26DAA33B008F62FA /* QuickCacheConfig.swift */; };
+		B99831F026DAA407008F62FA /* QuickCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99831EF26DAA407008F62FA /* QuickCache.swift */; };
+		BDA3260D50CB973F30C094C80D2B1816 /* MMKV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906D2AF4089EE792E8793AD810BDE432 /* MMKV.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		C17FF8FCF5D346895267E5478C3024D7 /* openssl_aesv8-armx.S in Sources */ = {isa = PBXBuildFile; fileRef = A22D2F9D54F2EC3B9B98E1A2A5A374BE /* openssl_aesv8-armx.S */; };
+		C82AB0AD8B78EC50A00F6C0B0AA6B4DC /* MMKVHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A63CE1A9FF4AF919C55C7C441786809 /* MMKVHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8A6F3290119492186153C0238AB4AD9 /* MMBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3168270A9069C1282F6E1C774401C85B /* MMBuffer.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		C8F7CCE4C1040BE6A54101EFDBCC8461 /* PBUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 75077E1FF028894F48363F276CC274EE /* PBUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAA70B6E0877D8D4F2F313761AF27839 /* InterProcessLock.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5BD80A0AA7D17DD7609F775A075A9A /* InterProcessLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0ED5DDC2C123B3AC0B8F0C69B5660B9 /* MemoryFile_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165A14D1914F99E4722CCCC866C11C51 /* MemoryFile_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D3135F952F4A9B3949AD09F3A83C8AAF /* MMKVLog_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E9E580F03288A7DC4905DA4ABDEDC /* MMKVLog_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D59E31BCB33DD93BBBAF8D642C735B3C /* KeyValueHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C77C5CCCBFAEF47A3B7F892A8C56180 /* KeyValueHolder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D87362BEC483B5FC0AABF60E42104ED5 /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B10A96AF047139FAA11751F0D21CA3 /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D93DF0FFEC71F2B4A2BC396B9D6A574E /* MiniPBCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 990218ECEA9B7B0E1153CFA674EAB633 /* MiniPBCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA5710B5B3DF02E01F6CC34ED994698B /* MMKVMetaInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A10CE1064CC1151D24DBAF335E6C1E93 /* MMKVMetaInfo.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD950A2A1E98C59F3C44DE47A6412576 /* CodedInputDataCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91F8DDE8F2667A6A08A7FF9D487CF9F7 /* CodedInputDataCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		DFF8211BA3689BD9D23765DA06107348 /* InterProcessLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0974D14F177B629066DF3A23CA624484 /* InterProcessLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		E019DB60D45F5EEFD1893A5F250E48E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */; };
+		E44CE72F74D29BBC4304CAE4CC03B22D /* Pods-QuickKV_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0B1EC1951A9A45145CBE756DB9E4F1 /* Pods-QuickKV_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5B37ECDC6BE0AD7B5E5B3BD7C9254F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */; };
+		EB8E2D4E68B7442DA3A3DF0090AF0703 /* MMBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1B5F9471B7DCAAEA670239D063210C /* MMBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE54B543BC12F53C348638B9AFF47D59 /* MMKVCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B23BD5443FF738B1387CC2DAC20DE0 /* MMKVCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE62AE71EFF53D74D51A0A3658479DA4 /* InterProcessLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABF3A3FAE005861DCC8C16653E6D8F98 /* InterProcessLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		F245B293E9A1289F8D820CC25238826B /* PBUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A2993924102EFE19E0282DA4267F7A5 /* PBUtility.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		F5F56E5C492DCD06BF7A52AEC3D8121C /* CodedOutputData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAF63ED32FF4BB6EB46F2CB5CCF15B7 /* CodedOutputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB3FA0C06C6253FD388C971B729F6577 /* openssl_aes_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C5DAF7E29607BF7B7ABA12F5C74F2 /* openssl_aes_core.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		FB9851B9563320DAFADE805E87F215DB /* KeyValueHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA07B24E6601807DE701E81D5943C06 /* KeyValueHolder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		FD7331D2F395006DD95DCD7FBFF530B6 /* openssl_cfb128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19AE3F8CB119D8670932E3725D116393 /* openssl_cfb128.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		FF6465B750E9FD321FD2CD71A71768D6 /* ThreadLock.h in Headers */ = {isa = PBXBuildFile; fileRef = EE97AACF51F59A5BA2F809C44945EC48 /* ThreadLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFA60BF792B2D4AD4625F4D1FB8694B6 /* openssl_aes-armv4.S in Sources */ = {isa = PBXBuildFile; fileRef = 2313524E724F256F04597F3AE12A1332 /* openssl_aes-armv4.S */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44959B66166591D7746BB1026FAB568E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5ACBA10F459DA1746A9F8D83CD8421E;
+			remoteInfo = QuickKV;
+		};
+		6928E670D78FE48F42ECDBFD509F906B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A6826828CB9FCD0169A7547E8A79EA;
+			remoteInfo = MMKV;
+		};
+		80B271A2639136441BAA96D8D84E66DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8AE887C706A43711D115E69B9D988A;
+			remoteInfo = MMKVCore;
+		};
+		9CCAE1F8D7E43EA380F2D97ACEA866FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A6826828CB9FCD0169A7547E8A79EA;
+			remoteInfo = MMKV;
+		};
+		A3A7AF59DB9E6C6487037A6F0C57B965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B362DFD999C0E8190A4F334E8C8D98A1;
+			remoteInfo = "Pods-QuickKV_Example";
+		};
+		C2BC99FBDB8D59749617CC0C869D62A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8AE887C706A43711D115E69B9D988A;
+			remoteInfo = MMKVCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07129BE46C21D8DE2C8669F96B99DC60 /* CodedOutputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedOutputData.cpp; path = Core/CodedOutputData.cpp; sourceTree = "<group>"; };
+		0921EEB791347E299BB6F30561F724C9 /* QuickKV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickKV.release.xcconfig; sourceTree = "<group>"; };
+		0974D14F177B629066DF3A23CA624484 /* InterProcessLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock.cpp; path = Core/InterProcessLock.cpp; sourceTree = "<group>"; };
+		09EF9A5E2A8EE47C843A24D9108D798B /* MMKV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0A681201044B709B8A59E408298ED1 /* CodedInputDataCrypt_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt_OSX.cpp; path = Core/CodedInputDataCrypt_OSX.cpp; sourceTree = "<group>"; };
+		0F3936A0FF18B9A61335FE7504E5DFD7 /* MMKV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKV-dummy.m"; sourceTree = "<group>"; };
+		0F9C5DAF7E29607BF7B7ABA12F5C74F2 /* openssl_aes_core.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_aes_core.cpp; path = Core/aes/openssl/openssl_aes_core.cpp; sourceTree = "<group>"; };
+		0FA1E89015788D5037CCAC99626F2036 /* QuickKV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickKV-dummy.m"; sourceTree = "<group>"; };
+		1193510DA9DBB95DABBE20FC87E2724D /* QuickKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickKV-prefix.pch"; sourceTree = "<group>"; };
+		12994B1375F66AF74A2C4F586C64D9E5 /* ThreadLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock_Win32.cpp; path = Core/ThreadLock_Win32.cpp; sourceTree = "<group>"; };
+		15E7A5763409836EDF59D52AFB826B87 /* MMKVCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKVCore.modulemap; sourceTree = "<group>"; };
+		165A14D1914F99E4722CCCC866C11C51 /* MemoryFile_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Win32.cpp; path = Core/MemoryFile_Win32.cpp; sourceTree = "<group>"; };
+		185B5DB94FDB1103F2319AE1DC4D8D9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		19A54ADDE13D377026349690B7227582 /* Pods-QuickKV_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickKV_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		19AE3F8CB119D8670932E3725D116393 /* openssl_cfb128.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_cfb128.cpp; path = Core/aes/openssl/openssl_cfb128.cpp; sourceTree = "<group>"; };
+		1A08702E4C2EB10884FB1537FC2485C8 /* MiniPBCoder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder.cpp; path = Core/MiniPBCoder.cpp; sourceTree = "<group>"; };
+		1A380CA16173727A468DF2536D7ADD06 /* AESCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = AESCrypt.cpp; path = Core/aes/AESCrypt.cpp; sourceTree = "<group>"; };
+		1B8A5F16402E5884A20E9DF655854078 /* QuickKV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickKV-Info.plist"; sourceTree = "<group>"; };
+		1C1B5F9471B7DCAAEA670239D063210C /* MMBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMBuffer.h; path = Core/MMBuffer.h; sourceTree = "<group>"; };
+		207E94278F6B0411551A33DE79EBB264 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2313524E724F256F04597F3AE12A1332 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
+		23C91EFFE12BD82616231AAA254EDB25 /* openssl_aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes.h; path = Core/aes/openssl/openssl_aes.h; sourceTree = "<group>"; };
+		23FB04FBA560A5BF131095ED6A59F899 /* QuickKV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickKV-umbrella.h"; sourceTree = "<group>"; };
+		25FA1965C647A598853E0BDFB189C742 /* ThreadLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock.cpp; path = Core/ThreadLock.cpp; sourceTree = "<group>"; };
+		27B10A96AF047139FAA11751F0D21CA3 /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = Core/MMKV.h; sourceTree = "<group>"; };
+		2A5E9E580F03288A7DC4905DA4ABDEDC /* MMKVLog_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog_Android.cpp; path = Core/MMKVLog_Android.cpp; sourceTree = "<group>"; };
+		2B2CEC1A8E7164F68D45757ACC725E6A /* ScopedLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ScopedLock.hpp; path = Core/ScopedLock.hpp; sourceTree = "<group>"; };
+		2C77C5CCCBFAEF47A3B7F892A8C56180 /* KeyValueHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyValueHolder.h; path = Core/KeyValueHolder.h; sourceTree = "<group>"; };
+		3168270A9069C1282F6E1C774401C85B /* MMBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMBuffer.cpp; path = Core/MMBuffer.cpp; sourceTree = "<group>"; };
+		33745AD8C0880949F1A3B0F4007FEB65 /* Pods-QuickKV_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickKV_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B9940B204D7776F2A52560CFD3F5826 /* MMKV_IO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_IO.h; path = Core/MMKV_IO.h; sourceTree = "<group>"; };
+		3BA07B24E6601807DE701E81D5943C06 /* KeyValueHolder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = KeyValueHolder.cpp; path = Core/KeyValueHolder.cpp; sourceTree = "<group>"; };
+		3E71FAE266594C986D93CBE8A202228F /* CodedInputDataCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputDataCrypt.h; path = Core/CodedInputDataCrypt.h; sourceTree = "<group>"; };
+		3FAF63ED32FF4BB6EB46F2CB5CCF15B7 /* CodedOutputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedOutputData.h; path = Core/CodedOutputData.h; sourceTree = "<group>"; };
+		41ED2540A94C662685E99653CD278CAD /* MMKVCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-prefix.pch"; sourceTree = "<group>"; };
+		46BE8A7C2A0A9563C9451B113744D5CA /* MemoryFile.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile.cpp; path = Core/MemoryFile.cpp; sourceTree = "<group>"; };
+		47BCC37BA7FC0DAE08AE1027632F9EC2 /* QuickKV.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QuickKV.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A2993924102EFE19E0282DA4267F7A5 /* PBUtility.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PBUtility.cpp; path = Core/PBUtility.cpp; sourceTree = "<group>"; };
+		4A63CE1A9FF4AF919C55C7C441786809 /* MMKVHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVHandler.h; path = iOS/MMKV/MMKV/MMKVHandler.h; sourceTree = "<group>"; };
+		4A9C2015E31755DA9455AA7019A307D5 /* CodedInputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData.cpp; path = Core/CodedInputData.cpp; sourceTree = "<group>"; };
+		59D7FEDCA1997CE93CA057E7C415F1F0 /* MMKV_OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_OSX.h; path = Core/MMKV_OSX.h; sourceTree = "<group>"; };
+		5AAAF07893E00BB0428EA67B0A065DCE /* MemoryFile_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_OSX.cpp; path = Core/MemoryFile_OSX.cpp; sourceTree = "<group>"; };
+		5AF75C22056F490037CB571180C22256 /* MMKVCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.release.xcconfig; sourceTree = "<group>"; };
+		5BCE57A53BE9FAB20EDE9C10A902B85E /* Pods_QuickKV_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickKV_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB597CDF1606155FB84E6409A6ECCD3 /* openssl_md5_dgst.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_dgst.cpp; path = Core/aes/openssl/openssl_md5_dgst.cpp; sourceTree = "<group>"; };
+		60018DCD91947585027A3EF487377999 /* Pods_QuickKV_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickKV_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AB1634560B4671C1686E32E988CBC7 /* Checksum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Checksum.h; path = Core/crc32/Checksum.h; sourceTree = "<group>"; };
+		6AF855BC972EC852EC6A9F2F76B9094F /* MMKV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-umbrella.h"; sourceTree = "<group>"; };
+		6B50614BABE36F5C4FB776489B650129 /* MMKV_IO.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_IO.cpp; path = Core/MMKV_IO.cpp; sourceTree = "<group>"; };
+		6C0B1EC1951A9A45145CBE756DB9E4F1 /* Pods-QuickKV_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickKV_Example-umbrella.h"; sourceTree = "<group>"; };
+		6C65A8009AB024DB0DC050E5470E6083 /* CodedInputData_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData_OSX.cpp; path = Core/CodedInputData_OSX.cpp; sourceTree = "<group>"; };
+		6C7A49451AE80DF5710F802729B12B1A /* MMKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-prefix.pch"; sourceTree = "<group>"; };
+		6C83453762E1226B1361ADFD2CDCC770 /* Pods-QuickKV_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuickKV_Example.modulemap"; sourceTree = "<group>"; };
+		6DFE9D5161B44BA168D25BD59593BF5F /* MMKVCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKVCore-Info.plist"; sourceTree = "<group>"; };
+		7450C437F6F36631F159C3EAD179CC3D /* Pods-QuickKV_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickKV_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7484775ADF8FB70288725C7BDD1D8AE7 /* QuickKV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickKV.modulemap; sourceTree = "<group>"; };
+		75077E1FF028894F48363F276CC274EE /* PBUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBUtility.h; path = Core/PBUtility.h; sourceTree = "<group>"; };
+		7726922D4E9F483B46C7C64C51D09EC7 /* MMKV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.debug.xcconfig; sourceTree = "<group>"; };
+		787C2F930EC9AB5A933DAF1240A861D0 /* Pods-QuickKV_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickKV_Tests-dummy.m"; sourceTree = "<group>"; };
+		7A0FD69A6FBC97DC16EDBB8FFA7767F3 /* Pods-QuickKV_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuickKV_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7AAA2632C16AFBA5CF71D1DE1A337E56 /* openssl_arm_arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_arm_arch.h; path = Core/aes/openssl/openssl_arm_arch.h; sourceTree = "<group>"; };
+		7C4AD85978064FE2FC8AD2FB91DB4EE3 /* Pods-QuickKV_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuickKV_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F1E5BA279AC050B61370EEDFE9B876F /* CacheError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheError.swift; path = QuickKV/Classes/CacheError.swift; sourceTree = "<group>"; };
+		83A7A163D2945F093BCB5D468E10F6F2 /* MMKVPredef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVPredef.h; path = Core/MMKVPredef.h; sourceTree = "<group>"; };
+		8A36ECA6E9119B9E8F421C3D0BDBF29C /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = iOS/MMKV/MMKV/MMKV.h; sourceTree = "<group>"; };
+		8AC9A2214BA52F776E9549F770EC8146 /* QuickKV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA0370BD7C3D5A811D00B24A8170F40 /* Pods-QuickKV_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickKV_Example-Info.plist"; sourceTree = "<group>"; };
+		906D2AF4089EE792E8793AD810BDE432 /* MMKV.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV.cpp; path = Core/MMKV.cpp; sourceTree = "<group>"; };
+		91F8DDE8F2667A6A08A7FF9D487CF9F7 /* CodedInputDataCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt.cpp; path = Core/CodedInputDataCrypt.cpp; sourceTree = "<group>"; };
+		92944A2B2BC3FE8CC31E8551BB085B63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		92EEC7E89C9EAD1436D33BE86DA4F034 /* CodedInputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputData.h; path = Core/CodedInputData.h; sourceTree = "<group>"; };
+		93F3416264BEABCC40BE9B9A06B701F4 /* PBEncodeItem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PBEncodeItem.hpp; path = Core/PBEncodeItem.hpp; sourceTree = "<group>"; };
+		96B23BD5443FF738B1387CC2DAC20DE0 /* MMKVCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-umbrella.h"; sourceTree = "<group>"; };
+		990218ECEA9B7B0E1153CFA674EAB633 /* MiniPBCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MiniPBCoder.h; path = Core/MiniPBCoder.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E16DA9AF02B58931B70BF64BE9D3EA1 /* openssl_md5_one.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_one.cpp; path = Core/aes/openssl/openssl_md5_one.cpp; sourceTree = "<group>"; };
+		A10CE1064CC1151D24DBAF335E6C1E93 /* MMKVMetaInfo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = MMKVMetaInfo.hpp; path = Core/MMKVMetaInfo.hpp; sourceTree = "<group>"; };
+		A22D2F9D54F2EC3B9B98E1A2A5A374BE /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
+		A34936E7A548A2970E06FF62F3CB8C47 /* Pods-QuickKV_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickKV_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A4108E735361C773A29BF6335992C955 /* MMKVLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVLog.h; path = Core/MMKVLog.h; sourceTree = "<group>"; };
+		AA8F4D8C0DEDC5785C3B3DEC61911736 /* Pods-QuickKV_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickKV_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF3A3FAE005861DCC8C16653E6D8F98 /* InterProcessLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Win32.cpp; path = Core/InterProcessLock_Win32.cpp; sourceTree = "<group>"; };
+		AC69225305041CE8E0C798D783553FB4 /* openssl_md32_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md32_common.h; path = Core/aes/openssl/openssl_md32_common.h; sourceTree = "<group>"; };
+		AD75785305A347A7459EDC677CE8BA4C /* MemoryFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryFile.h; path = Core/MemoryFile.h; sourceTree = "<group>"; };
+		B3B1AA1D9DDFA17C42C3C5F9E6154F6C /* MMKVLog.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog.cpp; path = Core/MMKVLog.cpp; sourceTree = "<group>"; };
+		B55B6BC82F2947CB056962D29AA66EC2 /* Pods-QuickKV_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickKV_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B63A7068213BC645D1A089EE567BA03A /* AESCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AESCrypt.h; path = Core/aes/AESCrypt.h; sourceTree = "<group>"; };
+		B7CA5D20FA88869AE0D87242BA7966DC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97C0E5C435FC81633205040395EA459 /* MiniPBCoder_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder_OSX.cpp; path = Core/MiniPBCoder_OSX.cpp; sourceTree = "<group>"; };
+		B99831E726DA93B5008F62FA /* CacheEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CacheEntry.swift; path = QuickKV/Classes/CacheEntry.swift; sourceTree = "<group>"; };
+		B99831E926DA95FD008F62FA /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = QuickKV/Classes/Transformer.swift; sourceTree = "<group>"; };
+		B99831EB26DA9FC4008F62FA /* MMKVHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MMKVHelper.swift; path = QuickKV/Classes/MMKVHelper.swift; sourceTree = "<group>"; };
+		B99831ED26DAA33B008F62FA /* QuickCacheConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuickCacheConfig.swift; path = QuickKV/Classes/QuickCacheConfig.swift; sourceTree = "<group>"; };
+		B99831EF26DAA407008F62FA /* QuickCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuickCache.swift; path = QuickKV/Classes/QuickCache.swift; sourceTree = "<group>"; };
+		BCD4E84349A7074B08BA2AC3E30195B0 /* openssl_md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5.h; path = Core/aes/openssl/openssl_md5.h; sourceTree = "<group>"; };
+		BFE6192A2DBDEE754810451346A9DE08 /* CacheExpiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheExpiry.swift; path = QuickKV/Classes/CacheExpiry.swift; sourceTree = "<group>"; };
+		C1084DFEC30B286E637AA02332B9B87A /* openssl_md5_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5_locl.h; path = Core/aes/openssl/openssl_md5_locl.h; sourceTree = "<group>"; };
+		C229C8D0F5C5C2C495F4104D38896A32 /* MemoryFile_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Android.cpp; path = Core/MemoryFile_Android.cpp; sourceTree = "<group>"; };
+		C243746E5B4B6BDCA1239E49C67EE611 /* MMKVCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKVCore-dummy.m"; sourceTree = "<group>"; };
+		C4D6AD7127B77200D766F34A7C16AC53 /* Pods-QuickKV_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuickKV_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CFBEEAB3AA358A60852BE6F6D616AADD /* openssl_aes_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes_locl.h; path = Core/aes/openssl/openssl_aes_locl.h; sourceTree = "<group>"; };
+		DE5BD80A0AA7D17DD7609F775A075A9A /* InterProcessLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InterProcessLock.h; path = Core/InterProcessLock.h; sourceTree = "<group>"; };
+		DF4A738E99D6BB49A799B00E9CE18F01 /* InterProcessLock_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Android.cpp; path = Core/InterProcessLock_Android.cpp; sourceTree = "<group>"; };
+		E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKVCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D9920B0EDA4CFF96B4C3D58B1A1350 /* QuickKV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickKV.debug.xcconfig; sourceTree = "<group>"; };
+		E2DCFD39B9C6D52CDACF46ECEC264E9D /* MMKV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKV.modulemap; sourceTree = "<group>"; };
+		E7FB7C9B774ED2F256AB197EDA58519A /* openssl_opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_opensslconf.h; path = Core/aes/openssl/openssl_opensslconf.h; sourceTree = "<group>"; };
+		E835DC623483D2067EBB0E430FC6CE22 /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
+		EBA995D0C65625B538F8BBE3E93AAB69 /* MMKV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.release.xcconfig; sourceTree = "<group>"; };
+		EE97AACF51F59A5BA2F809C44945EC48 /* ThreadLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThreadLock.h; path = Core/ThreadLock.h; sourceTree = "<group>"; };
+		F034A30E273422F593ECBF97DED5B2A7 /* MMKV_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_Android.cpp; path = Core/MMKV_Android.cpp; sourceTree = "<group>"; };
+		F1AC8591D4436BBCFB814156CA87BEEE /* MMKVCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.debug.xcconfig; sourceTree = "<group>"; };
+		F286704EFC68C2ED52C384E8B14499E3 /* Pods-QuickKV_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickKV_Example-dummy.m"; sourceTree = "<group>"; };
+		F3B4BA9EA5F7857DFAFA8B17EA4B66E7 /* Pods-QuickKV_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickKV_Tests-Info.plist"; sourceTree = "<group>"; };
+		F3E756DFAF6C83A0096BAE9BFA15544D /* Pods-QuickKV_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickKV_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F3EA7A860D2F8410D4BB4BCE753B5F77 /* MMKV_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_OSX.cpp; path = Core/MMKV_OSX.cpp; sourceTree = "<group>"; };
+		F8F7F25C5EB9308209AA7487B89EB072 /* Pods-QuickKV_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuickKV_Tests.modulemap"; sourceTree = "<group>"; };
+		FA18C5BF78A5D351D12A34B5A65BCF71 /* MMKV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKV-Info.plist"; sourceTree = "<group>"; };
+		FB68B1AD7C705B21C712542406658B60 /* MMKVCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMKVCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DBCAE393C74A6561B083734B572C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561A546016E2A5F2EA3AEE5DDDF43DF4 /* CoreFoundation.framework in Frameworks */,
+				1A763F6F2E710F6D4FED8954F2F2A225 /* Foundation.framework in Frameworks */,
+				271214ABAA4662EB9FCEDE076FD936C1 /* MMKVCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A1BA0DA2C1A6B4BE9E51D2313FE072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993CBDA1BE7351A49260CC3ADF864838 /* Foundation.framework in Frameworks */,
+				02290B13BA9FDA099999C88DF52848C1 /* MMKV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8114DCEE7D48A613BBC29A5CC7B3629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0A039FC4507CE08B0BF36DCE3C62AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F44B42D81FD0D1F701BB44EEE75E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E019DB60D45F5EEFD1893A5F250E48E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3831A04E6A9C7E330D14CFFD53C80F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0216F4A5F5D29795C7224347F304EE62 /* CoreFoundation.framework in Frameworks */,
+				E5B37ECDC6BE0AD7B5E5B3BD7C9254F3 /* Foundation.framework in Frameworks */,
+				47294FC9032A62AF4A0DBFAAE6857DA6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045215699C228E41673B971E0B0D27FC /* QuickKV */ = {
+			isa = PBXGroup;
+			children = (
+				7F1E5BA279AC050B61370EEDFE9B876F /* CacheError.swift */,
+				B99831ED26DAA33B008F62FA /* QuickCacheConfig.swift */,
+				B99831EF26DAA407008F62FA /* QuickCache.swift */,
+				BFE6192A2DBDEE754810451346A9DE08 /* CacheExpiry.swift */,
+				B99831E726DA93B5008F62FA /* CacheEntry.swift */,
+				B99831E926DA95FD008F62FA /* Transformer.swift */,
+				B99831EB26DA9FC4008F62FA /* MMKVHelper.swift */,
+				9B367C7C6BB88F2CFB4BAAFC40BBF6EA /* Pod */,
+				A769C0ED123A28BB49EAD89909CE2755 /* Support Files */,
+			);
+			name = QuickKV;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		085843222B0F1399ACE6CE9D2B28E8CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */,
+				E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */,
+				60018DCD91947585027A3EF487377999 /* Pods_QuickKV_Example.framework */,
+				5BCE57A53BE9FAB20EDE9C10A902B85E /* Pods_QuickKV_Tests.framework */,
+				8AC9A2214BA52F776E9549F770EC8146 /* QuickKV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BA4D78021606FA45FF7A7ECE7980483 /* MMKVCore */ = {
+			isa = PBXGroup;
+			children = (
+				1A380CA16173727A468DF2536D7ADD06 /* AESCrypt.cpp */,
+				B63A7068213BC645D1A089EE567BA03A /* AESCrypt.h */,
+				67AB1634560B4671C1686E32E988CBC7 /* Checksum.h */,
+				4A9C2015E31755DA9455AA7019A307D5 /* CodedInputData.cpp */,
+				92EEC7E89C9EAD1436D33BE86DA4F034 /* CodedInputData.h */,
+				6C65A8009AB024DB0DC050E5470E6083 /* CodedInputData_OSX.cpp */,
+				91F8DDE8F2667A6A08A7FF9D487CF9F7 /* CodedInputDataCrypt.cpp */,
+				3E71FAE266594C986D93CBE8A202228F /* CodedInputDataCrypt.h */,
+				0D0A681201044B709B8A59E408298ED1 /* CodedInputDataCrypt_OSX.cpp */,
+				07129BE46C21D8DE2C8669F96B99DC60 /* CodedOutputData.cpp */,
+				3FAF63ED32FF4BB6EB46F2CB5CCF15B7 /* CodedOutputData.h */,
+				0974D14F177B629066DF3A23CA624484 /* InterProcessLock.cpp */,
+				DE5BD80A0AA7D17DD7609F775A075A9A /* InterProcessLock.h */,
+				DF4A738E99D6BB49A799B00E9CE18F01 /* InterProcessLock_Android.cpp */,
+				ABF3A3FAE005861DCC8C16653E6D8F98 /* InterProcessLock_Win32.cpp */,
+				3BA07B24E6601807DE701E81D5943C06 /* KeyValueHolder.cpp */,
+				2C77C5CCCBFAEF47A3B7F892A8C56180 /* KeyValueHolder.h */,
+				46BE8A7C2A0A9563C9451B113744D5CA /* MemoryFile.cpp */,
+				AD75785305A347A7459EDC677CE8BA4C /* MemoryFile.h */,
+				C229C8D0F5C5C2C495F4104D38896A32 /* MemoryFile_Android.cpp */,
+				5AAAF07893E00BB0428EA67B0A065DCE /* MemoryFile_OSX.cpp */,
+				165A14D1914F99E4722CCCC866C11C51 /* MemoryFile_Win32.cpp */,
+				1A08702E4C2EB10884FB1537FC2485C8 /* MiniPBCoder.cpp */,
+				990218ECEA9B7B0E1153CFA674EAB633 /* MiniPBCoder.h */,
+				B97C0E5C435FC81633205040395EA459 /* MiniPBCoder_OSX.cpp */,
+				3168270A9069C1282F6E1C774401C85B /* MMBuffer.cpp */,
+				1C1B5F9471B7DCAAEA670239D063210C /* MMBuffer.h */,
+				906D2AF4089EE792E8793AD810BDE432 /* MMKV.cpp */,
+				27B10A96AF047139FAA11751F0D21CA3 /* MMKV.h */,
+				F034A30E273422F593ECBF97DED5B2A7 /* MMKV_Android.cpp */,
+				6B50614BABE36F5C4FB776489B650129 /* MMKV_IO.cpp */,
+				3B9940B204D7776F2A52560CFD3F5826 /* MMKV_IO.h */,
+				F3EA7A860D2F8410D4BB4BCE753B5F77 /* MMKV_OSX.cpp */,
+				59D7FEDCA1997CE93CA057E7C415F1F0 /* MMKV_OSX.h */,
+				B3B1AA1D9DDFA17C42C3C5F9E6154F6C /* MMKVLog.cpp */,
+				A4108E735361C773A29BF6335992C955 /* MMKVLog.h */,
+				2A5E9E580F03288A7DC4905DA4ABDEDC /* MMKVLog_Android.cpp */,
+				A10CE1064CC1151D24DBAF335E6C1E93 /* MMKVMetaInfo.hpp */,
+				83A7A163D2945F093BCB5D468E10F6F2 /* MMKVPredef.h */,
+				23C91EFFE12BD82616231AAA254EDB25 /* openssl_aes.h */,
+				2313524E724F256F04597F3AE12A1332 /* openssl_aes-armv4.S */,
+				0F9C5DAF7E29607BF7B7ABA12F5C74F2 /* openssl_aes_core.cpp */,
+				CFBEEAB3AA358A60852BE6F6D616AADD /* openssl_aes_locl.h */,
+				A22D2F9D54F2EC3B9B98E1A2A5A374BE /* openssl_aesv8-armx.S */,
+				7AAA2632C16AFBA5CF71D1DE1A337E56 /* openssl_arm_arch.h */,
+				19AE3F8CB119D8670932E3725D116393 /* openssl_cfb128.cpp */,
+				AC69225305041CE8E0C798D783553FB4 /* openssl_md32_common.h */,
+				BCD4E84349A7074B08BA2AC3E30195B0 /* openssl_md5.h */,
+				5EB597CDF1606155FB84E6409A6ECCD3 /* openssl_md5_dgst.cpp */,
+				C1084DFEC30B286E637AA02332B9B87A /* openssl_md5_locl.h */,
+				9E16DA9AF02B58931B70BF64BE9D3EA1 /* openssl_md5_one.cpp */,
+				E7FB7C9B774ED2F256AB197EDA58519A /* openssl_opensslconf.h */,
+				93F3416264BEABCC40BE9B9A06B701F4 /* PBEncodeItem.hpp */,
+				4A2993924102EFE19E0282DA4267F7A5 /* PBUtility.cpp */,
+				75077E1FF028894F48363F276CC274EE /* PBUtility.h */,
+				2B2CEC1A8E7164F68D45757ACC725E6A /* ScopedLock.hpp */,
+				25FA1965C647A598853E0BDFB189C742 /* ThreadLock.cpp */,
+				EE97AACF51F59A5BA2F809C44945EC48 /* ThreadLock.h */,
+				12994B1375F66AF74A2C4F586C64D9E5 /* ThreadLock_Win32.cpp */,
+				C950B8A0F9B9AFF0284F2CC1A654C0AA /* Support Files */,
+			);
+			path = MMKVCore;
+			sourceTree = "<group>";
+		};
+		13B4D34160F14678CF596A7539D6BD00 /* Pods-QuickKV_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6C83453762E1226B1361ADFD2CDCC770 /* Pods-QuickKV_Example.modulemap */,
+				7C4AD85978064FE2FC8AD2FB91DB4EE3 /* Pods-QuickKV_Example-acknowledgements.markdown */,
+				33745AD8C0880949F1A3B0F4007FEB65 /* Pods-QuickKV_Example-acknowledgements.plist */,
+				F286704EFC68C2ED52C384E8B14499E3 /* Pods-QuickKV_Example-dummy.m */,
+				C4D6AD7127B77200D766F34A7C16AC53 /* Pods-QuickKV_Example-frameworks.sh */,
+				8FA0370BD7C3D5A811D00B24A8170F40 /* Pods-QuickKV_Example-Info.plist */,
+				6C0B1EC1951A9A45145CBE756DB9E4F1 /* Pods-QuickKV_Example-umbrella.h */,
+				AA8F4D8C0DEDC5785C3B3DEC61911736 /* Pods-QuickKV_Example.debug.xcconfig */,
+				7450C437F6F36631F159C3EAD179CC3D /* Pods-QuickKV_Example.release.xcconfig */,
+			);
+			name = "Pods-QuickKV_Example";
+			path = "Target Support Files/Pods-QuickKV_Example";
+			sourceTree = "<group>";
+		};
+		20F0B5EC71179760839EE49CD4FC213B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13B4D34160F14678CF596A7539D6BD00 /* Pods-QuickKV_Example */,
+				2B0B286BAEABF6E17977DFD4885877B6 /* Pods-QuickKV_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2B0B286BAEABF6E17977DFD4885877B6 /* Pods-QuickKV_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7F25C5EB9308209AA7487B89EB072 /* Pods-QuickKV_Tests.modulemap */,
+				7A0FD69A6FBC97DC16EDBB8FFA7767F3 /* Pods-QuickKV_Tests-acknowledgements.markdown */,
+				B55B6BC82F2947CB056962D29AA66EC2 /* Pods-QuickKV_Tests-acknowledgements.plist */,
+				787C2F930EC9AB5A933DAF1240A861D0 /* Pods-QuickKV_Tests-dummy.m */,
+				F3B4BA9EA5F7857DFAFA8B17EA4B66E7 /* Pods-QuickKV_Tests-Info.plist */,
+				A34936E7A548A2970E06FF62F3CB8C47 /* Pods-QuickKV_Tests-umbrella.h */,
+				19A54ADDE13D377026349690B7227582 /* Pods-QuickKV_Tests.debug.xcconfig */,
+				F3E756DFAF6C83A0096BAE9BFA15544D /* Pods-QuickKV_Tests.release.xcconfig */,
+			);
+			name = "Pods-QuickKV_Tests";
+			path = "Target Support Files/Pods-QuickKV_Tests";
+			sourceTree = "<group>";
+		};
+		72F97ECF5FB26E20048D1558C88397BF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7CA5D20FA88869AE0D87242BA7966DC /* CoreFoundation.framework */,
+				4A2227115C76FD988AC681CE8ABE436E /* Foundation.framework */,
+				185B5DB94FDB1103F2319AE1DC4D8D9D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9B367C7C6BB88F2CFB4BAAFC40BBF6EA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				92944A2B2BC3FE8CC31E8551BB085B63 /* LICENSE */,
+				47BCC37BA7FC0DAE08AE1027632F9EC2 /* QuickKV.podspec */,
+				207E94278F6B0411551A33DE79EBB264 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A769C0ED123A28BB49EAD89909CE2755 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7484775ADF8FB70288725C7BDD1D8AE7 /* QuickKV.modulemap */,
+				0FA1E89015788D5037CCAC99626F2036 /* QuickKV-dummy.m */,
+				1B8A5F16402E5884A20E9DF655854078 /* QuickKV-Info.plist */,
+				1193510DA9DBB95DABBE20FC87E2724D /* QuickKV-prefix.pch */,
+				23FB04FBA560A5BF131095ED6A59F899 /* QuickKV-umbrella.h */,
+				E2D9920B0EDA4CFF96B4C3D58B1A1350 /* QuickKV.debug.xcconfig */,
+				0921EEB791347E299BB6F30561F724C9 /* QuickKV.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/QuickKV";
+			sourceTree = "<group>";
+		};
+		BBB166FDC6CF45281D8151C3101824E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEA14B93D66CF3F02B10FEDB9E6A6C7F /* MMKV */,
+				0BA4D78021606FA45FF7A7ECE7980483 /* MMKVCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C21A9389C08D3193DADA93B8719D9F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09EF9A5E2A8EE47C843A24D9108D798B /* MMKV.framework */,
+				FB68B1AD7C705B21C712542406658B60 /* MMKVCore.framework */,
+				72F97ECF5FB26E20048D1558C88397BF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C83834A867ED09CD3EBD90C98A6B0FAA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				045215699C228E41673B971E0B0D27FC /* QuickKV */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C950B8A0F9B9AFF0284F2CC1A654C0AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15E7A5763409836EDF59D52AFB826B87 /* MMKVCore.modulemap */,
+				C243746E5B4B6BDCA1239E49C67EE611 /* MMKVCore-dummy.m */,
+				6DFE9D5161B44BA168D25BD59593BF5F /* MMKVCore-Info.plist */,
+				41ED2540A94C662685E99653CD278CAD /* MMKVCore-prefix.pch */,
+				96B23BD5443FF738B1387CC2DAC20DE0 /* MMKVCore-umbrella.h */,
+				F1AC8591D4436BBCFB814156CA87BEEE /* MMKVCore.debug.xcconfig */,
+				5AF75C22056F490037CB571180C22256 /* MMKVCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMKVCore";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C83834A867ED09CD3EBD90C98A6B0FAA /* Development Pods */,
+				C21A9389C08D3193DADA93B8719D9F5B /* Frameworks */,
+				BBB166FDC6CF45281D8151C3101824E0 /* Pods */,
+				085843222B0F1399ACE6CE9D2B28E8CE /* Products */,
+				20F0B5EC71179760839EE49CD4FC213B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D68E101D5F4A4ACA54C4816BFA1FA481 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2DCFD39B9C6D52CDACF46ECEC264E9D /* MMKV.modulemap */,
+				0F3936A0FF18B9A61335FE7504E5DFD7 /* MMKV-dummy.m */,
+				FA18C5BF78A5D351D12A34B5A65BCF71 /* MMKV-Info.plist */,
+				6C7A49451AE80DF5710F802729B12B1A /* MMKV-prefix.pch */,
+				6AF855BC972EC852EC6A9F2F76B9094F /* MMKV-umbrella.h */,
+				7726922D4E9F483B46C7C64C51D09EC7 /* MMKV.debug.xcconfig */,
+				EBA995D0C65625B538F8BBE3E93AAB69 /* MMKV.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMKV";
+			sourceTree = "<group>";
+		};
+		FEA14B93D66CF3F02B10FEDB9E6A6C7F /* MMKV */ = {
+			isa = PBXGroup;
+			children = (
+				E835DC623483D2067EBB0E430FC6CE22 /* libMMKV.mm */,
+				8A36ECA6E9119B9E8F421C3D0BDBF29C /* MMKV.h */,
+				4A63CE1A9FF4AF919C55C7C441786809 /* MMKVHandler.h */,
+				D68E101D5F4A4ACA54C4816BFA1FA481 /* Support Files */,
+			);
+			path = MMKV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57F917BC4E16A539604A6FE357E217F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44CE72F74D29BBC4304CAE4CC03B22D /* Pods-QuickKV_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88000A2DCD0388626D69B085999BAC9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				215AD37B7EF0CE69E3E63EF73B5FAA40 /* Pods-QuickKV_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAAB2A909C16AB435EB30466EB260814 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F7C82D4E2D9FB68A71500AD6EDF25B /* MMKV-umbrella.h in Headers */,
+				4FE441E40437875F78CC77FCB2C55E3B /* MMKV.h in Headers */,
+				C82AB0AD8B78EC50A00F6C0B0AA6B4DC /* MMKVHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD017E8F9CFCB55A90DE906EF09A39FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2ECBA44AC51DA22C34451ACC150931 /* QuickKV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AE2A23682E676F9F7C256FD3143303 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8FC0EA06A7C01090D1C8639F2CEAF8 /* AESCrypt.h in Headers */,
+				90DC16EEE5DAC9D24044966BF654A8A9 /* Checksum.h in Headers */,
+				55A7AD9ACB71B626D1A089CC7925EC7D /* CodedInputData.h in Headers */,
+				279B7D5EB79521A0D4F0F07FBE8AEF6F /* CodedInputDataCrypt.h in Headers */,
+				F5F56E5C492DCD06BF7A52AEC3D8121C /* CodedOutputData.h in Headers */,
+				CAA70B6E0877D8D4F2F313761AF27839 /* InterProcessLock.h in Headers */,
+				D59E31BCB33DD93BBBAF8D642C735B3C /* KeyValueHolder.h in Headers */,
+				6E9FF4054FD6BD82A197FED63C5B3541 /* MemoryFile.h in Headers */,
+				D93DF0FFEC71F2B4A2BC396B9D6A574E /* MiniPBCoder.h in Headers */,
+				EB8E2D4E68B7442DA3A3DF0090AF0703 /* MMBuffer.h in Headers */,
+				D87362BEC483B5FC0AABF60E42104ED5 /* MMKV.h in Headers */,
+				B4597A63477282F1B63D5AB914BDFDC6 /* MMKV_IO.h in Headers */,
+				806A8174C4CF69903E92F7FCDCBBEC8F /* MMKV_OSX.h in Headers */,
+				EE54B543BC12F53C348638B9AFF47D59 /* MMKVCore-umbrella.h in Headers */,
+				3CFCE06BEA55C8FE94E6C0E04A373E15 /* MMKVLog.h in Headers */,
+				DA5710B5B3DF02E01F6CC34ED994698B /* MMKVMetaInfo.hpp in Headers */,
+				1317998C257192CE0BED883C3BFF5099 /* MMKVPredef.h in Headers */,
+				8108A2406BF7986D8C3739FC92A3901B /* openssl_aes.h in Headers */,
+				902172BF365CB8A83CCF27F0D42CB458 /* openssl_aes_locl.h in Headers */,
+				5E7585C5327DDD5FABE5AA5BE98C808C /* openssl_arm_arch.h in Headers */,
+				3C157C1EE693D730A43938F1BDC9F360 /* openssl_md32_common.h in Headers */,
+				25994B951A3A5D149251054DE7F32D6B /* openssl_md5.h in Headers */,
+				B725BE73D55BCCD280AE05DF88100B7E /* openssl_md5_locl.h in Headers */,
+				9356AA435A963AE6727CA43D10FD4725 /* openssl_opensslconf.h in Headers */,
+				260940AE697FFAEF8C72EB4D8D8B2537 /* PBEncodeItem.hpp in Headers */,
+				C8F7CCE4C1040BE6A54101EFDBCC8461 /* PBUtility.h in Headers */,
+				1B5F8FBD2D4803B2A56DAE58F27E501B /* ScopedLock.hpp in Headers */,
+				FF6465B750E9FD321FD2CD71A71768D6 /* ThreadLock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C2DC61C86E057DC0B7371E546E8B768 /* Pods-QuickKV_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6112FB19B45ACDD54AEF72700BADF3C9 /* Build configuration list for PBXNativeTarget "Pods-QuickKV_Tests" */;
+			buildPhases = (
+				88000A2DCD0388626D69B085999BAC9A /* Headers */,
+				B73192CDBE87C914B05BE781A03C820E /* Sources */,
+				A8114DCEE7D48A613BBC29A5CC7B3629 /* Frameworks */,
+				FC2A44CEE08E16297F1057D4431FD56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5972293C5A4A80BF3CA4597B5973F2EB /* PBXTargetDependency */,
+			);
+			name = "Pods-QuickKV_Tests";
+			productName = "Pods-QuickKV_Tests";
+			productReference = 5BCE57A53BE9FAB20EDE9C10A902B85E /* Pods_QuickKV_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91A6826828CB9FCD0169A7547E8A79EA /* MMKV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F90292966141597E4B379ADBE3916E5 /* Build configuration list for PBXNativeTarget "MMKV" */;
+			buildPhases = (
+				CAAB2A909C16AB435EB30466EB260814 /* Headers */,
+				BC69986E5BF51C671D24D62367677DE3 /* Sources */,
+				04DBCAE393C74A6561B083734B572C9E /* Frameworks */,
+				D00A9A4DDDAA60341C40F5A5D33835EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D75B24501D8A4A7B168702BCE84B1DB4 /* PBXTargetDependency */,
+			);
+			name = MMKV;
+			productName = MMKV;
+			productReference = B88A54159B245E727A6D16DEFE105A09 /* MMKV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC8AE887C706A43711D115E69B9D988A /* MMKVCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B2CE27CB5EDD6AEBFBC70549C9F55F /* Build configuration list for PBXNativeTarget "MMKVCore" */;
+			buildPhases = (
+				D0AE2A23682E676F9F7C256FD3143303 /* Headers */,
+				FFD537B952B53DF7E7173831F928A2EB /* Sources */,
+				DD3831A04E6A9C7E330D14CFFD53C80F /* Frameworks */,
+				126DC497DD391DB9BCF54B443109DA87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMKVCore;
+			productName = MMKVCore;
+			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B362DFD999C0E8190A4F334E8C8D98A1 /* Pods-QuickKV_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD4DAB10DEEF1081B70CF3200C01145 /* Build configuration list for PBXNativeTarget "Pods-QuickKV_Example" */;
+			buildPhases = (
+				57F917BC4E16A539604A6FE357E217F3 /* Headers */,
+				F05C61C523F5BB5F996EA7576D8D0F3E /* Sources */,
+				D4F44B42D81FD0D1F701BB44EEE75E98 /* Frameworks */,
+				EDB5752A574A7F944470350D0801FB10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A427A476C12BCB30BECB735D06E0114 /* PBXTargetDependency */,
+				29098E6DBF1F608EA1B344E152FEF3BB /* PBXTargetDependency */,
+				1CE58957440B53E0047480716C6AF0F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuickKV_Example";
+			productName = "Pods-QuickKV_Example";
+			productReference = 60018DCD91947585027A3EF487377999 /* Pods_QuickKV_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5ACBA10F459DA1746A9F8D83CD8421E /* QuickKV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99229046ED6ABF9BEFC69C7E180A648E /* Build configuration list for PBXNativeTarget "QuickKV" */;
+			buildPhases = (
+				CD017E8F9CFCB55A90DE906EF09A39FA /* Headers */,
+				AEF651A306E3B2752F7BB6086BBCDB3F /* Sources */,
+				83A1BA0DA2C1A6B4BE9E51D2313FE072 /* Frameworks */,
+				7F651F89D93240C4BDCF39C49D04070A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C441F3461187C7E9301304E2C7E45BB5 /* PBXTargetDependency */,
+			);
+			name = QuickKV;
+			productName = QuickKV;
+			productReference = 8AC9A2214BA52F776E9549F770EC8146 /* QuickKV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 085843222B0F1399ACE6CE9D2B28E8CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91A6826828CB9FCD0169A7547E8A79EA /* MMKV */,
+				AC8AE887C706A43711D115E69B9D988A /* MMKVCore */,
+				B362DFD999C0E8190A4F334E8C8D98A1 /* Pods-QuickKV_Example */,
+				5C2DC61C86E057DC0B7371E546E8B768 /* Pods-QuickKV_Tests */,
+				E5ACBA10F459DA1746A9F8D83CD8421E /* QuickKV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		126DC497DD391DB9BCF54B443109DA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F651F89D93240C4BDCF39C49D04070A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00A9A4DDDAA60341C40F5A5D33835EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB5752A574A7F944470350D0801FB10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2A44CEE08E16297F1057D4431FD56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEF651A306E3B2752F7BB6086BBCDB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99831E826DA93B5008F62FA /* CacheEntry.swift in Sources */,
+				0F811CF789B76338EF964818D0186D15 /* CacheError.swift in Sources */,
+				B99831EE26DAA33B008F62FA /* QuickCacheConfig.swift in Sources */,
+				710459E79483525263EB151007ABC3DC /* CacheExpiry.swift in Sources */,
+				B99831F026DAA407008F62FA /* QuickCache.swift in Sources */,
+				B99831EA26DA95FD008F62FA /* Transformer.swift in Sources */,
+				B99831EC26DA9FC4008F62FA /* MMKVHelper.swift in Sources */,
+				58C8C489930FB92613AF3E72F079DA25 /* QuickKV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73192CDBE87C914B05BE781A03C820E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0FBBE696443836B0DA1077FA0DDDEA /* Pods-QuickKV_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC69986E5BF51C671D24D62367677DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7E832BCB7CC1273579ACB4C891E6A1 /* libMMKV.mm in Sources */,
+				7150BF2A8DA67791496F43A2232F04DF /* MMKV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05C61C523F5BB5F996EA7576D8D0F3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C4525FEF4A9E662A3E16567A7D6EB5 /* Pods-QuickKV_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD537B952B53DF7E7173831F928A2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4955FD9AC736AE4B03D4ECC0CBD5FFAE /* AESCrypt.cpp in Sources */,
+				7999702604FC882E11960E81D8F121F1 /* CodedInputData.cpp in Sources */,
+				77207079DA0330C02ECBE7BDA93BB4C9 /* CodedInputData_OSX.cpp in Sources */,
+				DD950A2A1E98C59F3C44DE47A6412576 /* CodedInputDataCrypt.cpp in Sources */,
+				A2E5257078C77B51AAB6933B7C615F06 /* CodedInputDataCrypt_OSX.cpp in Sources */,
+				1E9F38E78EC15B34F90FE460BC33ACC9 /* CodedOutputData.cpp in Sources */,
+				DFF8211BA3689BD9D23765DA06107348 /* InterProcessLock.cpp in Sources */,
+				28D5ABBE57A8224DA7B1E68894E50B06 /* InterProcessLock_Android.cpp in Sources */,
+				EE62AE71EFF53D74D51A0A3658479DA4 /* InterProcessLock_Win32.cpp in Sources */,
+				FB9851B9563320DAFADE805E87F215DB /* KeyValueHolder.cpp in Sources */,
+				5D73A3809F85EB452BEAAA8B429C3F25 /* MemoryFile.cpp in Sources */,
+				2B0E23B10761AE6DA33F9FD7E21AE319 /* MemoryFile_Android.cpp in Sources */,
+				732E6DCB322D522FFFCB72FF02528E73 /* MemoryFile_OSX.cpp in Sources */,
+				D0ED5DDC2C123B3AC0B8F0C69B5660B9 /* MemoryFile_Win32.cpp in Sources */,
+				38D4FFAC11A634A9045D270117B2CC72 /* MiniPBCoder.cpp in Sources */,
+				8762C747016E44BFA29FC0C611152BCB /* MiniPBCoder_OSX.cpp in Sources */,
+				C8A6F3290119492186153C0238AB4AD9 /* MMBuffer.cpp in Sources */,
+				BDA3260D50CB973F30C094C80D2B1816 /* MMKV.cpp in Sources */,
+				AE2941C94B3F900CA994B197E77F3E6B /* MMKV_Android.cpp in Sources */,
+				69AF8E4AD417F45432E76805EBD380BE /* MMKV_IO.cpp in Sources */,
+				150A51884FE1D958716E451DC89BEA42 /* MMKV_OSX.cpp in Sources */,
+				71407F861D084C40861CD08FDE5004FD /* MMKVCore-dummy.m in Sources */,
+				6168A65B824901A3C55EC502F743BA6E /* MMKVLog.cpp in Sources */,
+				D3135F952F4A9B3949AD09F3A83C8AAF /* MMKVLog_Android.cpp in Sources */,
+				FFA60BF792B2D4AD4625F4D1FB8694B6 /* openssl_aes-armv4.S in Sources */,
+				FB3FA0C06C6253FD388C971B729F6577 /* openssl_aes_core.cpp in Sources */,
+				C17FF8FCF5D346895267E5478C3024D7 /* openssl_aesv8-armx.S in Sources */,
+				FD7331D2F395006DD95DCD7FBFF530B6 /* openssl_cfb128.cpp in Sources */,
+				7C738D760F5978072290B9D20A53C910 /* openssl_md5_dgst.cpp in Sources */,
+				A3755124D2F9E4FEDD1EF783C9860686 /* openssl_md5_one.cpp in Sources */,
+				F245B293E9A1289F8D820CC25238826B /* PBUtility.cpp in Sources */,
+				9E3B92F2D578FACEEB001812F5DC12F3 /* ThreadLock.cpp in Sources */,
+				9615D7C10A3269B3CF007701C487A096 /* ThreadLock_Win32.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A427A476C12BCB30BECB735D06E0114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKV;
+			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
+			targetProxy = 6928E670D78FE48F42ECDBFD509F906B /* PBXContainerItemProxy */;
+		};
+		1CE58957440B53E0047480716C6AF0F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickKV;
+			target = E5ACBA10F459DA1746A9F8D83CD8421E /* QuickKV */;
+			targetProxy = 44959B66166591D7746BB1026FAB568E /* PBXContainerItemProxy */;
+		};
+		29098E6DBF1F608EA1B344E152FEF3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKVCore;
+			target = AC8AE887C706A43711D115E69B9D988A /* MMKVCore */;
+			targetProxy = 80B271A2639136441BAA96D8D84E66DF /* PBXContainerItemProxy */;
+		};
+		5972293C5A4A80BF3CA4597B5973F2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuickKV_Example";
+			target = B362DFD999C0E8190A4F334E8C8D98A1 /* Pods-QuickKV_Example */;
+			targetProxy = A3A7AF59DB9E6C6487037A6F0C57B965 /* PBXContainerItemProxy */;
+		};
+		C441F3461187C7E9301304E2C7E45BB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKV;
+			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
+			targetProxy = 9CCAE1F8D7E43EA380F2D97ACEA866FE /* PBXContainerItemProxy */;
+		};
+		D75B24501D8A4A7B168702BCE84B1DB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKVCore;
+			target = AC8AE887C706A43711D115E69B9D988A /* MMKVCore */;
+			targetProxy = C2BC99FBDB8D59749617CC0C869D62A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1349BFFE71F822AB0994B9478DEAE1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF75C22056F490037CB571180C22256 /* MMKVCore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
+				PRODUCT_MODULE_NAME = MMKVCore;
+				PRODUCT_NAME = MMKVCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		20C1E91599BB8A449680D687BA0B3715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E756DFAF6C83A0096BAE9BFA15544D /* Pods-QuickKV_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickKV_Tests/Pods-QuickKV_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickKV_Tests/Pods-QuickKV_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DD418A481C7300964DACCDA23401915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7726922D4E9F483B46C7C64C51D09EC7 /* MMKV.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
+				PRODUCT_MODULE_NAME = MMKV;
+				PRODUCT_NAME = MMKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FE1DEB5278474D469A1FC7D7D4BE332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1AC8591D4436BBCFB814156CA87BEEE /* MMKVCore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
+				PRODUCT_MODULE_NAME = MMKVCore;
+				PRODUCT_NAME = MMKVCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BE0D09C6B60EECDD28DDFF0EF9E01E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA995D0C65625B538F8BBE3E93AAB69 /* MMKV.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKV/MMKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKV/MMKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMKV/MMKV.modulemap";
+				PRODUCT_MODULE_NAME = MMKV;
+				PRODUCT_NAME = MMKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF2CED33240A79D82F403553594C6F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A54ADDE13D377026349690B7227582 /* Pods-QuickKV_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickKV_Tests/Pods-QuickKV_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickKV_Tests/Pods-QuickKV_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EC9A0226AA3037FA935CE7300A8A36AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7450C437F6F36631F159C3EAD179CC3D /* Pods-QuickKV_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickKV_Example/Pods-QuickKV_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickKV_Example/Pods-QuickKV_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5AECBCBAF3F55054B8B22E158334B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0921EEB791347E299BB6F30561F724C9 /* QuickKV.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickKV/QuickKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickKV/QuickKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickKV/QuickKV.modulemap";
+				PRODUCT_MODULE_NAME = QuickKV;
+				PRODUCT_NAME = QuickKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB80A59702C9E04A2C1539A9B9B1107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D9920B0EDA4CFF96B4C3D58B1A1350 /* QuickKV.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickKV/QuickKV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickKV/QuickKV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickKV/QuickKV.modulemap";
+				PRODUCT_MODULE_NAME = QuickKV;
+				PRODUCT_NAME = QuickKV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE6019970D681CA6FE80C963ED098CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8F4D8C0DEDC5785C3B3DEC61911736 /* Pods-QuickKV_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickKV_Example/Pods-QuickKV_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickKV_Example/Pods-QuickKV_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F90292966141597E4B379ADBE3916E5 /* Build configuration list for PBXNativeTarget "MMKV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD418A481C7300964DACCDA23401915 /* Debug */,
+				BE0D09C6B60EECDD28DDFF0EF9E01E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6112FB19B45ACDD54AEF72700BADF3C9 /* Build configuration list for PBXNativeTarget "Pods-QuickKV_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2CED33240A79D82F403553594C6F9D /* Debug */,
+				20C1E91599BB8A449680D687BA0B3715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99229046ED6ABF9BEFC69C7E180A648E /* Build configuration list for PBXNativeTarget "QuickKV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB80A59702C9E04A2C1539A9B9B1107E /* Debug */,
+				F5AECBCBAF3F55054B8B22E158334B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B2CE27CB5EDD6AEBFBC70549C9F55F /* Build configuration list for PBXNativeTarget "MMKVCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE1DEB5278474D469A1FC7D7D4BE332 /* Debug */,
+				1349BFFE71F822AB0994B9478DEAE1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD4DAB10DEEF1081B70CF3200C01145 /* Build configuration list for PBXNativeTarget "Pods-QuickKV_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6019970D681CA6FE80C963ED098CE8 /* Debug */,
+				EC9A0226AA3037FA935CE7300A8A36AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

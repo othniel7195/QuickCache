@@ -22,8 +22,7 @@ pod 'QuickKV'
 
 ## Author
 
-wjszf, 478043385@qq.com
-
+jimmy, zhaofeng7195@yeah.net
 ## License
 
 QuickKV is available under the MIT license. See the LICENSE file for more info.
